@@ -116,6 +116,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
+
 //get one user, agora usando os middlewares
 router.get("/profile", isAuth, attachCurrentUser, async (req, res) => {
   try {
